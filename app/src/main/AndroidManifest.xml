@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.frederickbertram.composekotlinmap">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyBn-tV0L4DpyPH8UhDibK5G6ki68QJ-p9I"/>
+
     <application
 
         android:allowBackup="true"
@@ -10,9 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeKotlinMap">
-        <uses-permission android:name="android.permission.INTERNET"/>
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBn-tV0L4DpyPH8UhDibK5G6ki68QJ-p9I"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
