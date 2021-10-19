@@ -3,8 +3,7 @@
     package="com.frederickbertram.composekotlinmap">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <meta-data android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyBn-tV0L4DpyPH8UhDibK5G6ki68QJ-p9I"/>
+
 
     <application
 
@@ -14,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeKotlinMap">
-
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBn-tV0L4DpyPH8UhDibK5G6ki68QJ-p9I"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
