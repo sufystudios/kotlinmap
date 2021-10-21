@@ -20,7 +20,7 @@ class MainViewModel() : ViewModel() {
     }
 
     fun fetchJson() {
-        val url="https://github.com/elementengineering/Mobile-App-Coding-Challenge/blob/master/data/data.json"
+        val url="https://raw.githubusercontent.com/elementengineering/Mobile-App-Coding-Challenge/master/data/data.json"
         val request= Request.Builder().url(url).build()
         val client= OkHttpClient()
         client.newCall(request).enqueue(object : Callback {
