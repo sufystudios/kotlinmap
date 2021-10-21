@@ -9,8 +9,7 @@ import java.io.IOException
 
 
 class MainViewModel() : ViewModel() {
-
-
+    lateinit var feed : List<MapItems>
 
     init{
         //fetch json data
@@ -26,18 +25,13 @@ class MainViewModel() : ViewModel() {
 
             override fun onResponse(call: Call, response: Response) {
                 val body= response.body?.string()
-
-
-
                 val gson = GsonBuilder().create()
-                val feed = gson.fromJson(body,Array<MapItems>::class.java).toList()
+
                 if (body != null) {
+                    feed = gson.fromJson(body,Array<MapItems>::class.java).toList()
                     Log.d("JSONDATA",body.toString())
                     Log.d("JSONITEM",feed[1].name)
                 }
-
-
-
             }
 
             override fun onFailure(call: Call, e: IOException) {
@@ -45,6 +39,8 @@ class MainViewModel() : ViewModel() {
             }
         })
     }
+
+    fun fillMap() {}
 
 
 }

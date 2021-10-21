@@ -46,16 +46,7 @@ fun MapView( mainViewModel: MainViewModel) {
                         .position(destination)
                     map.addMarker(markerOptionsDestination)
 
-                    map.addPolyline(
-                        PolylineOptions().add(
-                            pickUp,
-                            LatLng(-34.747, 145.592),
-                            LatLng(-34.364, 147.891),
-                            LatLng(-33.501, 150.217),
-                            LatLng(-32.306, 149.248),
-                            destination
-                        )
-                    )
+                    
 
                 }
 
