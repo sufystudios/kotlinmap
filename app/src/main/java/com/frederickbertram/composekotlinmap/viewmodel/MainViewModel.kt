@@ -2,8 +2,7 @@ package com.frederickbertram.composekotlinmap.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.frederickbertram.composekotlinmap.model.JsonItem
-import com.frederickbertram.composekotlinmap.view.MapView
+import com.frederickbertram.composekotlinmap.model.MapItems
 import com.google.gson.GsonBuilder
 import okhttp3.*
 import java.io.IOException
@@ -30,9 +29,11 @@ class MainViewModel() : ViewModel() {
 
 
 
-                val gson= GsonBuilder().create()
+                val gson = GsonBuilder().create()
+                val feed = gson.fromJson(body,Array<MapItems>::class.java).toList()
                 if (body != null) {
                     Log.d("JSONDATA",body.toString())
+                    Log.d("JSONITEM",feed[1].name)
                 }
 
 
