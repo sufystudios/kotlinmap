@@ -2,6 +2,7 @@ package com.frederickbertram.composekotlinmap.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import com.frederickbertram.composekotlinmap.model.JsonItem
 import com.frederickbertram.composekotlinmap.view.MapView
 import com.google.gson.GsonBuilder
 import okhttp3.*
@@ -12,10 +13,9 @@ class MainViewModel() : ViewModel() {
 
 
 
-
     init{
         //fetch json data
-        fetchJson();
+        fetchJson()
 
     }
 
@@ -26,12 +26,15 @@ class MainViewModel() : ViewModel() {
         client.newCall(request).enqueue(object : Callback {
 
             override fun onResponse(call: Call, response: Response) {
-                val body= response.body?.
+                val body= response.body?.string()
 
 
 
                 val gson= GsonBuilder().create()
-                //Log.d("JSONDATA",gson.fromJson(body))
+                if (body != null) {
+                    Log.d("JSONDATA",body.toString())
+                }
+
 
 
             }
