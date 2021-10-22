@@ -46,7 +46,7 @@ class MainViewModel() : ViewModel() {
                     feed = gson.fromJson(body,Array<MapItems>::class.java).toList()
 
                     Log.d("JSONDATA",body.toString())
-                    Log.d("JSONITEM", feed!![1].name)
+                    Log.d("JSONITEM", (feed!![1].latitude.toString() + " " + feed!![1].longitude.toString()))
 
                 }
             }

@@ -42,8 +42,8 @@ fun ShowMapView( mainViewModel: MainViewModel) {
 
 
                             for (item in feed) {
-                                Log.d("position", item.lat.toString() + " " + item.lng.toString())
-                                val position = LatLng(item.lat, item.lng)
+                                Log.d("position", item.latitude.toString() + " " + item.longitude.toString())
+                                val position = LatLng(item.latitude, item.longitude)
                                 val markerOptions = MarkerOptions()
                                     .title(item.name)
                                     .position(position)

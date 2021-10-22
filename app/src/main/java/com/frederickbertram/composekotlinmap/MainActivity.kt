@@ -44,7 +44,7 @@ class MainActivity : ComponentActivity() {
 
 
 
-                    Thread.sleep(3000)
+                    //Thread.sleep(3000)
                     ShowMapView(mainViewModel = mainViewModel)
                        
                    }
