@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.viewinterop.AndroidView
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
+import com.google.android.libraries.maps.CameraUpdate
 import com.google.android.libraries.maps.MapView
 import com.google.android.libraries.maps.model.LatLng
 import com.google.android.libraries.maps.model.MarkerOptions
@@ -31,12 +32,13 @@ fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
                 CoroutineScope(Dispatchers.Main).launch {
                     val map = mapView.awaitMap()
                     map.uiSettings.isZoomControlsEnabled = true
-                            map.cameraPosition.target
                     for(item in mainViewModel.feed.value!!) {
                         val marker =MarkerOptions()
                         marker.title(item.name + " " + item.departureTime)
                         marker.position(LatLng(item.latitude,item.longitude))
                         map.addMarker(marker)
+                        
+
                     }
                         }}
                 }}
