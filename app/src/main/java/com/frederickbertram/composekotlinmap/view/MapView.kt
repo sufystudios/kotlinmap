@@ -1,6 +1,5 @@
 package com.frederickbertram.composekotlinmap.view
 
-import android.util.Log
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -10,23 +9,16 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.viewinterop.AndroidView
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
-import com.google.android.libraries.maps.CameraUpdateFactory
 import com.google.android.libraries.maps.MapView
 import com.google.android.libraries.maps.model.LatLng
 import com.google.android.libraries.maps.model.MarkerOptions
-import com.google.android.libraries.maps.model.PolylineOptions
 import com.google.maps.android.ktx.awaitMap
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import rememberMapViewWithLifecycle
-import java.lang.Thread.sleep
 
 @Composable
-fun ShowMapView( mainViewModel: MainViewModel) {
-    val mapView = rememberMapViewWithLifecycle()
-    var feed =mainViewModel.feed
-
+fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
 
         Column(
             modifier = Modifier
@@ -39,21 +31,16 @@ fun ShowMapView( mainViewModel: MainViewModel) {
                 CoroutineScope(Dispatchers.Main).launch {
                     val map = mapView.awaitMap()
                     map.uiSettings.isZoomControlsEnabled = true
-
-
-                            for (item in feed) {
-                                Log.d("position", item.latitude.toString() + " " + item.longitude.toString())
-                                val position = LatLng(item.latitude, item.longitude)
-                                val markerOptions = MarkerOptions()
-                                    .title(item.name)
-                                    .position(position)
-                                map.addMarker(markerOptions)
-                            }
-                        }
-
-
+                            map.cameraPosition.target
+                    for(item in mainViewModel.feed.value!!) {
+                        val marker =MarkerOptions()
+                        marker.title(item.name + " " + item.departureTime)
+                        marker.position(LatLng(item.latitude,item.longitude))
+                        map.addMarker(marker)
                     }
+                        }}
                 }}
+
 
 
 
