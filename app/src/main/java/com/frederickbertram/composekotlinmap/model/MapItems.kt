@@ -20,7 +20,7 @@ class MapItems (var typeId: Int, var departureTime: String, var route: String, v
         var formatter2 = DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm a")
         var dateTime = LocalDateTime.parse(subDate+subTime+ZoneOffset.UTC,formatter)
 
-return dateTime
+        return dateTime.format(formatter2)
 
     }
 
