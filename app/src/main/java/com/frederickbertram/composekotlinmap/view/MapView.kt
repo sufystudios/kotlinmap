@@ -1,13 +1,21 @@
 package com.frederickbertram.composekotlinmap.view
 
+import android.graphics.fonts.FontStyle
+import android.os.Build
 import android.util.Half.toFloat
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
 import com.google.android.libraries.maps.CameraUpdate
@@ -21,6 +29,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+@RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
 
@@ -29,7 +38,15 @@ fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
             .fillMaxHeight()
             .fillMaxWidth()
             .background(Color.White)
+
     ) {
+
+        Text(modifier= Modifier
+            .height(Dp(40F))
+            .fillMaxWidth(),
+            textAlign = TextAlign.Center,
+            text = "\nDepartures"
+        )
 
         AndroidView({ mapView }) { mapView ->
             CoroutineScope(Dispatchers.Main).launch {
@@ -51,15 +68,10 @@ fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
 
                     }
                     marker.title(item.name + " " + if(item.typeId==0)"(Train)" else "(Tram)" )
-                    marker.snippet(item.departureTime)
+                    marker.snippet(item.getFormattedTime(item.departureTime))
                     marker.position(position)
                     map.addMarker(marker)
-
-
-
                 }
-
-
             }}
     }}
 
