@@ -4,22 +4,23 @@ import androidx.activity.ComponentActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.frederickbertram.composekotlinmap.model.MapItems
+import com.frederickbertram.composekotlinmap.model.createListFromJsonString
 import com.google.android.libraries.maps.MapView
-import com.google.gson.GsonBuilder
 import okhttp3.*
 import java.io.IOException
 
-
-class MainViewModel() : ViewModel() {
+class MainViewModel : ViewModel() {
     internal lateinit var mapView: MapView
+
+    private lateinit var owner: ComponentActivity
+
+    //live data isn't used for this static map so I didn't implement an observer for change yet
     internal val feed: MutableLiveData<List<MapItems>> by lazy {
         MutableLiveData<List<MapItems>>().also { fetchJson() }
     }
-    private lateinit var owner: ComponentActivity
 
-
-    init {
-        feed.value = emptyList()
+    init{
+        feed.value= emptyList()
     }
 
     fun fetchJson() {
@@ -28,13 +29,11 @@ class MainViewModel() : ViewModel() {
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
         client.newCall(request).enqueue(object : Callback {
-
             override fun onResponse(call: Call, response: Response) {
                 val body = response.body?.string()
-                val gson = GsonBuilder().create()
 
                 if (body != null) {
-                    feed.postValue((gson.fromJson(body, Array<MapItems>::class.java).toList()))
+                    feed.postValue( createListFromJsonString(body))
                     //Log.d("JSONDATA", body.toString())
                 }
             }
@@ -52,5 +51,4 @@ class MainViewModel() : ViewModel() {
     fun setMap(mapView: MapView) {
         this.mapView = mapView
     }
-
 }

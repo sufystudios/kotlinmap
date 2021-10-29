@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.viewinterop.AndroidView
+import com.frederickbertram.composekotlinmap.model.getFormattedTime
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
 import com.google.android.libraries.maps.CameraUpdateFactory
 import com.google.android.libraries.maps.MapView
@@ -55,10 +56,8 @@ fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView) {
                     val position = LatLng(item.latitude, item.longitude)
                     val cameraUpdate = CameraUpdateFactory.newLatLng(position)
                     map.moveCamera(cameraUpdate)
-
-
-                    marker.title(item.name + " " + if (item.typeId == 0) "(Train)" else "(Tram)")
-                    marker.snippet(item.getFormattedTime(item.departureTime))
+                    marker.title(item.name + " " + if(item.typeId==0)"(Train)" else "(Tram)" )
+                    marker.snippet(getFormattedTime(item.departureTime))
                     marker.position(position)
                     map.addMarker(marker)
                 }
