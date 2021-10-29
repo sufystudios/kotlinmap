@@ -13,9 +13,7 @@ import com.google.android.libraries.maps.MapView
 fun rememberMapViewWithLifecycle(): MapView {
     val context = LocalContext.current
     val mapView = remember {
-        MapView(context).apply {
-            id = R.id.map
-        }
+        MapView(context).apply { id = R.id.map }
     }
 
     // Makes MapView follow the lifecycle of this composable

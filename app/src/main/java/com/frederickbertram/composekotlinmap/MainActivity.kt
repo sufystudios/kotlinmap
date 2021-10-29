@@ -30,36 +30,26 @@ import rememberMapViewWithLifecycle
 @InternalCoroutinesApi
 class MainActivity : ComponentActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         var mapView: MapView
         val mainViewModel: MainViewModel by viewModels()
         mainViewModel.setLifecycle(this)
 
-
         setContent {
             mapView = rememberMapViewWithLifecycle()
             mainViewModel.setMap(mapView)
 
             ComposeKotlinMapTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
 
                     Header("Kotlin Map")
 
-
-                    //Thread.sleep(3000)
                     ShowMapView(mainViewModel = mainViewModel, mapView)
-
                 }
-
-
             }
         }
-
     }
-
 
     @Composable
     fun Header(name: String) {

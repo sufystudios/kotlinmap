@@ -1,15 +1,10 @@
 package com.frederickbertram.composekotlinmap.viewmodel
 
-import android.content.Context
-import android.util.Log
 import androidx.activity.ComponentActivity
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.google.android.libraries.maps.MapView
-import com.google.android.libraries.maps.model.LatLng
-import com.google.android.libraries.maps.model.MarkerOptions
 import com.google.gson.GsonBuilder
 import okhttp3.*
 import java.io.IOException
@@ -18,23 +13,14 @@ import java.io.IOException
 class MainViewModel() : ViewModel() {
     internal lateinit var mapView: MapView
     internal val feed: MutableLiveData<List<MapItems>> by lazy {
-        MutableLiveData<List<MapItems>>().also {
-            fetchJson()
-        }
+        MutableLiveData<List<MapItems>>().also { fetchJson() }
     }
     private lateinit var owner: ComponentActivity
 
 
-
-
-    init{
-        //fetch json data
-        feed.value= emptyList()
-
+    init {
+        feed.value = emptyList()
     }
-
-
-
 
     fun fetchJson() {
         val url =
@@ -48,12 +34,11 @@ class MainViewModel() : ViewModel() {
                 val gson = GsonBuilder().create()
 
                 if (body != null) {
-                    feed.postValue( (gson.fromJson(body, Array<MapItems>::class.java).toList()))
-
+                    feed.postValue((gson.fromJson(body, Array<MapItems>::class.java).toList()))
                     //Log.d("JSONDATA", body.toString())
-
                 }
             }
+
             override fun onFailure(call: Call, e: IOException) {
                 println("Failed to execute request")
             }
@@ -61,11 +46,11 @@ class MainViewModel() : ViewModel() {
     }
 
     fun setLifecycle(owner: ComponentActivity) {
-        this.owner =  owner
+        this.owner = owner
     }
 
     fun setMap(mapView: MapView) {
-        this.mapView=mapView
+        this.mapView = mapView
     }
 
 }
