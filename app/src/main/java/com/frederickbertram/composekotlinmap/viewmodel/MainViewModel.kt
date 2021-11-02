@@ -1,7 +1,8 @@
 package com.frederickbertram.composekotlinmap.viewmodel
 
+import android.util.Log
 import androidx.activity.ComponentActivity
-import androidx.lifecycle.MutableLiveData
+import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.model.createListFromJsonString
@@ -15,12 +16,11 @@ class MainViewModel : ViewModel() {
     private lateinit var owner: ComponentActivity
 
     //live data isn't used for this static map so I didn't implement an observer for change yet
-    internal val feed: MutableLiveData<List<MapItems>> by lazy {
-        MutableLiveData<List<MapItems>>().also { fetchJson() }
-    }
+    var feed = mutableStateListOf<MapItems>()
 
     init{
-        feed.value= emptyList()
+        fetchJson()
+
     }
 
     fun fetchJson() {
@@ -33,8 +33,12 @@ class MainViewModel : ViewModel() {
                 val body = response.body?.string()
 
                 if (body != null) {
-                    feed.postValue( createListFromJsonString(body))
-                    //Log.d("JSONDATA", body.toString())
+                    feed.clear()
+                    feed = createListFromJsonString(body)
+                    for(item in feed) {
+                        Log.d("JSONITEM", item.name)
+                    }
+                    Log.d("JSONDATA", body.toString())
                 }
             }
 

@@ -1,5 +1,7 @@
 package com.frederickbertram.composekotlinmap.model
 
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.snapshots.SnapshotStateList
 import com.google.gson.GsonBuilder
 import java.time.LocalDateTime
 import java.time.ZoneOffset
@@ -7,9 +9,12 @@ import java.time.format.DateTimeFormatter
 
 
 class MapItems (var typeId: Int, var departureTime: String, var route: String, var name: String, var latitude: Double, var longitude: Double, var isExpress: Boolean, var hasMyKiTopUp: Boolean) {}
-fun createListFromJsonString(json: String) : List<MapItems> {
+fun createListFromJsonString(json: String) : SnapshotStateList<MapItems> {
     val gson = GsonBuilder().create()
-    return gson.fromJson(json, Array<MapItems>::class.java).toList()
+    val state = mutableStateListOf<MapItems>()
+    for(item in gson.fromJson(json, Array<MapItems>::class.java).toList())
+        state.add(item)
+    return state
 }
 fun getFormattedTime(date: String): String {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dHH:mm:ssz")

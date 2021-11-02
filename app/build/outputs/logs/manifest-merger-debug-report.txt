@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.activity:activity-compose:1.4.0-rc01] /Users/sufy/.gradle/caches/transforms-3/952c5672428e579d5a1bd9e70f763776/transformed/jetified-activity-compose-1.4.0-rc01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.3.6] /Users/sufy/.gradle/caches/transforms-3/953f51057ea4f238b7a652fe37f1df07/transformed/jetified-fragment-ktx-1.3.6/AndroidManifest.xml:17:1-24:12
@@ -29,7 +29,7 @@ MERGED from [androidx.compose.runtime:runtime:1.0.4] /Users/sufy/.gradle/caches/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /Users/sufy/.gradle/caches/transforms-3/87ab29ca39225db5f4502bb15b2b009d/transformed/jetified-lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.6.0] /Users/sufy/.gradle/caches/transforms-3/66949c176dfe1ee125f095342c9f60d6/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.maps.android:maps-v3-ktx:2.2.0] /Users/sufy/.gradle/caches/transforms-3/892756a01b2cafbaf1cf1f943b911ccd/transformed/jetified-maps-v3-ktx-2.2.0/AndroidManifest.xml:18:1-25:12
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:2:1-22:12
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.android.material:material:1.4.0] /Users/sufy/.gradle/caches/transforms-3/f3e0ef1c4c55ae40279a209270654e77/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/sufy/.gradle/caches/transforms-3/6b44686167e6b69de05d050c57285868/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/sufy/.gradle/caches/transforms-3/0fb02969c722f592ded73cf02c9e77f0/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
@@ -37,11 +37,11 @@ MERGED from [androidx.compose.ui:ui-util:1.0.4] /Users/sufy/.gradle/caches/trans
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/sufy/.gradle/caches/transforms-3/cab635a84662b90ec91b0b85c5d9ab8d/transformed/jetified-lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/sufy/.gradle/caches/transforms-3/3bb7dd714a02fdb57cc6e3f05c27086a/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/sufy/.gradle/caches/transforms-3/15ed46c42918e4c7f6db85a5d9491deb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/108530387fcf5754bc69b3ba8134f754/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/7b72c40791383458e841debf741568dc/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/c154c9b3c218853b5966c8aad58e1982/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ad7a4ff79b988f17051ea2a76a6a9f4d/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/sufy/.gradle/caches/transforms-3/8c8951926428cd266e6170e781e971be/transformed/jetified-play-services-places-placereport-15.0.1/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sufy/.gradle/caches/transforms-3/8e89b04347f96dd7ca13b6a4d2454a8b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/sufy/.gradle/caches/transforms-3/6433011c7085062e60fe93b1bcffcde8/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.4.0-rc01] /Users/sufy/.gradle/caches/transforms-3/48878f0f1c1c293bd0273f0edb0f15e9/transformed/jetified-activity-1.4.0-rc01/AndroidManifest.xml:17:1-24:12
@@ -82,50 +82,50 @@ MERGED from [androidx.print:print:1.0.0] /Users/sufy/.gradle/caches/transforms-3
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sufy/.gradle/caches/transforms-3/9987c6eab2188303d435014f365e21da/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/sufy/.gradle/caches/transforms-3/839f12db90d9072ad2aa0e49762600d9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/sufy/.gradle/caches/transforms-3/bb6ace1b56ea67bf2f8afcff049d3c7f/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/f0bdb5ec20519d8b981d1e409aaa7193/transformed/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/d35009a9203a82d6d52c839e8ad18a80/transformed/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
 	package
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:3:5-52
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:3:5-52
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:1-31:12
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:1-31:12
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:5:5-66
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:9:3-64
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:9:3-64
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:5:5-66
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:9:3-64
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:9:3-64
 	android:name
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:8:5-29:19
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:8:5-29:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:18:3-21:17
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:18:3-21:17
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:18:3-21:17
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:18:3-21:17
 MERGED from [com.google.android.material:material:1.4.0] /Users/sufy/.gradle/caches/transforms-3/f3e0ef1c4c55ae40279a209270654e77/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /Users/sufy/.gradle/caches/transforms-3/f3e0ef1c4c55ae40279a209270654e77/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/sufy/.gradle/caches/transforms-3/6b44686167e6b69de05d050c57285868/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/sufy/.gradle/caches/transforms-3/6b44686167e6b69de05d050c57285868/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/108530387fcf5754bc69b3ba8134f754/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/108530387fcf5754bc69b3ba8134f754/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/7b72c40791383458e841debf741568dc/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/7b72c40791383458e841debf741568dc/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/c154c9b3c218853b5966c8aad58e1982/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/c154c9b3c218853b5966c8aad58e1982/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ad7a4ff79b988f17051ea2a76a6a9f4d/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ad7a4ff79b988f17051ea2a76a6a9f4d/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/sufy/.gradle/caches/transforms-3/8c8951926428cd266e6170e781e971be/transformed/jetified-play-services-places-placereport-15.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/sufy/.gradle/caches/transforms-3/8c8951926428cd266e6170e781e971be/transformed/jetified-play-services-places-placereport-15.0.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.7.0-rc01] /Users/sufy/.gradle/caches/transforms-3/d68f444eb4f32426b5e26db6f9c14dbe/transformed/core-1.7.0-rc01/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.7.0-rc01] /Users/sufy/.gradle/caches/transforms-3/d68f444eb4f32426b5e26db6f9c14dbe/transformed/core-1.7.0-rc01/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sufy/.gradle/caches/transforms-3/012327088441bf5ca32bb39d6ef9bac5/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -134,52 +134,52 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.0.4] /Users/sufy/.grad
 MERGED from [androidx.profileinstaller:profileinstaller:1.0.4] /Users/sufy/.gradle/caches/transforms-3/134763595808c2d8c437676fa8502e9c/transformed/jetified-profileinstaller-1.0.4/AndroidManifest.xml:25:5-46:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sufy/.gradle/caches/transforms-3/9987c6eab2188303d435014f365e21da/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sufy/.gradle/caches/transforms-3/9987c6eab2188303d435014f365e21da/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
-MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/f0bdb5ec20519d8b981d1e409aaa7193/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/f0bdb5ec20519d8b981d1e409aaa7193/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/d35009a9203a82d6d52c839e8ad18a80/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/d35009a9203a82d6d52c839e8ad18a80/transformed/jetified-volley-1.1.1/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0-rc01] /Users/sufy/.gradle/caches/transforms-3/d68f444eb4f32426b5e26db6f9c14dbe/transformed/core-1.7.0-rc01/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:15:9-54
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:16:9-17:70
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:16:9-17:70
 	android:value
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:17:13-68
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:17:13-68
 	android:name
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:16:20-65
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:16:20-65
 activity#com.frederickbertram.composekotlinmap.MainActivity
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:18:9-28:20
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:18:9-28:20
 	android:label
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:21:13-45
 	android:exported
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:20:13-36
 	android:theme
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:22:13-70
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:22:13-70
 	android:name
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml:26:27-74
 uses-sdk
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 MERGED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity-compose:1.4.0-rc01] /Users/sufy/.gradle/caches/transforms-3/952c5672428e579d5a1bd9e70f763776/transformed/jetified-activity-compose-1.4.0-rc01/AndroidManifest.xml:20:5-22:41
@@ -230,8 +230,8 @@ MERGED from [androidx.core:core-ktx:1.6.0] /Users/sufy/.gradle/caches/transforms
 MERGED from [androidx.core:core-ktx:1.6.0] /Users/sufy/.gradle/caches/transforms-3/66949c176dfe1ee125f095342c9f60d6/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.maps.android:maps-v3-ktx:2.2.0] /Users/sufy/.gradle/caches/transforms-3/892756a01b2cafbaf1cf1f943b911ccd/transformed/jetified-maps-v3-ktx-2.2.0/AndroidManifest.xml:21:5-23:41
 MERGED from [com.google.maps.android:maps-v3-ktx:2.2.0] /Users/sufy/.gradle/caches/transforms-3/892756a01b2cafbaf1cf1f943b911ccd/transformed/jetified-maps-v3-ktx-2.2.0/AndroidManifest.xml:21:5-23:41
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:6:3-8:36
-MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:6:3-8:36
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:6:3-8:36
+MERGED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:6:3-8:36
 MERGED from [com.google.android.material:material:1.4.0] /Users/sufy/.gradle/caches/transforms-3/f3e0ef1c4c55ae40279a209270654e77/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] /Users/sufy/.gradle/caches/transforms-3/f3e0ef1c4c55ae40279a209270654e77/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /Users/sufy/.gradle/caches/transforms-3/6b44686167e6b69de05d050c57285868/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
@@ -246,16 +246,16 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/sufy/.gradle/cache
 MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /Users/sufy/.gradle/caches/transforms-3/3bb7dd714a02fdb57cc6e3f05c27086a/transformed/jetified-savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/sufy/.gradle/caches/transforms-3/15ed46c42918e4c7f6db85a5d9491deb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/sufy/.gradle/caches/transforms-3/15ed46c42918e4c7f6db85a5d9491deb/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/108530387fcf5754bc69b3ba8134f754/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/108530387fcf5754bc69b3ba8134f754/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/7b72c40791383458e841debf741568dc/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/7b72c40791383458e841debf741568dc/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/c154c9b3c218853b5966c8aad58e1982/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/sufy/.gradle/caches/transforms-3/c154c9b3c218853b5966c8aad58e1982/transformed/jetified-play-services-location-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ad7a4ff79b988f17051ea2a76a6a9f4d/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ad7a4ff79b988f17051ea2a76a6a9f4d/transformed/jetified-play-services-tasks-15.0.1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/sufy/.gradle/caches/transforms-3/8c8951926428cd266e6170e781e971be/transformed/jetified-play-services-places-placereport-15.0.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/sufy/.gradle/caches/transforms-3/8c8951926428cd266e6170e781e971be/transformed/jetified-play-services-places-placereport-15.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sufy/.gradle/caches/transforms-3/8e89b04347f96dd7ca13b6a4d2454a8b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sufy/.gradle/caches/transforms-3/8e89b04347f96dd7ca13b6a4d2454a8b/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.3.6] /Users/sufy/.gradle/caches/transforms-3/6433011c7085062e60fe93b1bcffcde8/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
@@ -336,18 +336,18 @@ MERGED from [androidx.tracing:tracing:1.0.0] /Users/sufy/.gradle/caches/transfor
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/sufy/.gradle/caches/transforms-3/839f12db90d9072ad2aa0e49762600d9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/sufy/.gradle/caches/transforms-3/bb6ace1b56ea67bf2f8afcff049d3c7f/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/sufy/.gradle/caches/transforms-3/bb6ace1b56ea67bf2f8afcff049d3c7f/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/f0bdb5ec20519d8b981d1e409aaa7193/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/f0bdb5ec20519d8b981d1e409aaa7193/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/d35009a9203a82d6d52c839e8ad18a80/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/sufy/.gradle/caches/transforms-3/d35009a9203a82d6d52c839e8ad18a80/transformed/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sufy/AndroidStudioProjects/ComposeKotlinMap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sufy/AndroidStudioProjects/kotlinmap/app/src/main/AndroidManifest.xml
 activity#androidx.compose.ui.tooling.PreviewActivity
 ADDED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:25:9-27:39
 	android:exported
@@ -355,43 +355,43 @@ ADDED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/tra
 	android:name
 		ADDED from [androidx.compose.ui:ui-tooling:1.0.4] /Users/sufy/.gradle/caches/transforms-3/93a79d513008f41862a67684c48548eb/transformed/jetified-ui-tooling-1.0.4/AndroidManifest.xml:26:13-71
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:10:3-76
+ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:10:3-76
 	android:name
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:10:20-74
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:10:20-74
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:12:3-78
+ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:12:3-78
 	android:name
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:12:20-76
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:12:20-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:13:3-76
+ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:13:3-76
 	android:name
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:13:20-74
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:13:20-74
 uses-feature#0x00020000
-ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:15:3-17:30
+ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:15:3-17:30
 	android:glEsVersion
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:16:5-37
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:16:5-37
 	android:required
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:17:5-28
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:17:5-28
 uses-library#org.apache.http.legacy
-ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:7-86
+ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:7-86
 	android:required
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:59-83
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:59-83
 	android:name
-		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/0067e47517ca0b290ade15c17536b963/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:21-58
+		ADDED from [com.google.android.libraries.maps:maps:3.1.0-beta] /Users/sufy/.gradle/caches/transforms-3/ed5e4b73e1495c600dec6d45ae9e7789/transformed/jetified-maps-3.1.0-beta/AndroidManifest.xml:20:21-58
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/5a09b41718d718a5513b464e0b871b85/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sufy/.gradle/caches/transforms-3/46a87c3a377fd8186b7ea060bbd087ed/transformed/jetified-play-services-base-15.0.1/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/593af159c516c5423ed7212cf5557b6c/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sufy/.gradle/caches/transforms-3/ef24812496fcd42cd6f25219c0b5f114/transformed/jetified-play-services-basement-15.0.1/AndroidManifest.xml:24:13-58
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.profileinstaller:profileinstaller:1.0.4] /Users/sufy/.gradle/caches/transforms-3/134763595808c2d8c437676fa8502e9c/transformed/jetified-profileinstaller-1.0.4/AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/sufy/.gradle/caches/transforms-3/9987c6eab2188303d435014f365e21da/transformed/jetified-startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34

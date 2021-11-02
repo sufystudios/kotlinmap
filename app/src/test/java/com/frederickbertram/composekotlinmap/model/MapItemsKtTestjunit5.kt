@@ -128,7 +128,7 @@ internal class MapItemsKtTestjunit5 {
 
     @org.junit.jupiter.api.Test
     fun getFormattedTime() {
-        Assertions.assertEquals(getFormattedTime(mapItems.get(0).departureTime) ,"03 Jul. 2021 09:10 am")
+        assertEquals(getFormattedTime(mapItems.get(0).departureTime) ,"03 Jul. 2021 09:10 am")
     }
 
     @org.junit.jupiter.api.Test
