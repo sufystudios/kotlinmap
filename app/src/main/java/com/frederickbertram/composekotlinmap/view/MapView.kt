@@ -3,13 +3,10 @@ package com.frederickbertram.composekotlinmap.view
 import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.*
+import androidx.compose.material.Button
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
@@ -17,6 +14,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.model.getFormattedTime
+import com.frederickbertram.composekotlinmap.model.getTrains
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
 import com.google.android.libraries.maps.CameraUpdateFactory
 import com.google.android.libraries.maps.MapView
@@ -28,14 +26,19 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 @Composable
-fun MapScreen(mainViewModel: MainViewModel, mapView: MapView) {
-
+fun MapScreen(mapView: MapView, mainViewModel: MainViewModel) {
+    ShowMapView( mapView, mainViewModel.feed, mainViewModel::addAllFeed, mainViewModel::removeAllFeed)
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
-fun ShowMapView(mapView: MapView, feed: SnapshotStateList<MapItems>) {
-    feed
+fun ShowMapView(
+    mapView: MapView,
+    feed: List<MapItems>,
+    addList: (List<MapItems>) -> Unit,
+    clearList :() -> Unit
+) {
+
     Column(
         modifier = Modifier
             .fillMaxHeight()
@@ -49,7 +52,12 @@ fun ShowMapView(mapView: MapView, feed: SnapshotStateList<MapItems>) {
                 .height(Dp(40F))
                 .fillMaxWidth(), textAlign = TextAlign.Center, text = "\nDepartures"
         )
+        Row {
+            Button(onClick = { clearList()
+                addList(getTrains(feed)) }) {
 
+            }            
+        }
         AndroidView({ mapView }) { mapView ->
             CoroutineScope(Dispatchers.Main).launch {
                 val map = mapView.awaitMap()

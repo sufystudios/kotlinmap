@@ -10,7 +10,9 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.ui.theme.ComposeKotlinMapTheme
+import com.frederickbertram.composekotlinmap.view.MapScreen
 
 import com.frederickbertram.composekotlinmap.view.ShowMapView
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
@@ -25,7 +27,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         var mapView: MapView
         val mainViewModel: MainViewModel by viewModels()
+
         mainViewModel.setLifecycle(this)
+
         //mainViewModel.fetchJson()
         setContent {
             mapView = rememberMapViewWithLifecycle()
@@ -33,14 +37,12 @@ class MainActivity : ComponentActivity() {
 
             ComposeKotlinMapTheme {
                 Surface(color = MaterialTheme.colors.background) {
-
-                    Header("Kotlin Map")
-
-                    ShowMapView(mapView, mainViewModel.feed)
+                    MapScreen(mapView,mainViewModel)
                 }
             }
         }
     }
+
 
     @Composable
     fun Header(name: String) {

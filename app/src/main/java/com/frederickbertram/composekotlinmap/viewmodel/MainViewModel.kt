@@ -17,19 +17,15 @@ class MainViewModel : ViewModel() {
     private lateinit var owner: ComponentActivity
 
     //live data isn't used for this static map so I didn't implement an observer for change yet
-    var feed = mutableStateListOf<MapItems>()
+    var feed = mutableStateListOf<MapItems>().also { fetchJson() }
+
+
     fun removeAllFeed() {
         feed.clear()
     }
     fun addAllFeed(l :List<MapItems>) {
         feed.addAll(l)
     }
-
-    init{
-        fetchJson()
-
-    }
-
 
 
     fun fetchJson() {
