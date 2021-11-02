@@ -27,10 +27,15 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
+@Composable
+fun MapScreen(mainViewModel: MainViewModel, mapView: MapView) {
+
+}
+
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
-fun ShowMapView(mainViewModel: MainViewModel, mapView: MapView, feed: SnapshotStateList<MapItems>) {
-
+fun ShowMapView(mapView: MapView, feed: SnapshotStateList<MapItems>) {
+    feed
     Column(
         modifier = Modifier
             .fillMaxHeight()

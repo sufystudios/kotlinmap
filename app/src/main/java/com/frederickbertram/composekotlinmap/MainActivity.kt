@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
 
                     Header("Kotlin Map")
 
-                    ShowMapView(mainViewModel = mainViewModel, mapView, mainViewModel.feed)
+                    ShowMapView(mapView, mainViewModel.feed)
                 }
             }
         }

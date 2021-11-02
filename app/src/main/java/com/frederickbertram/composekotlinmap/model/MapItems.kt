@@ -9,12 +9,12 @@ import java.time.format.DateTimeFormatter
 
 
 class MapItems (var typeId: Int, var departureTime: String, var route: String, var name: String, var latitude: Double, var longitude: Double, var isExpress: Boolean, var hasMyKiTopUp: Boolean) {}
-fun createListFromJsonString(json: String) : SnapshotStateList<MapItems> {
+fun createListFromJsonString(json: String) : List<MapItems> {
     val gson = GsonBuilder().create()
-    val state = mutableStateListOf<MapItems>()
-    for(item in gson.fromJson(json, Array<MapItems>::class.java).toList())
-        state.add(item)
-    return state
+
+    return gson.fromJson(json, Array<MapItems>::class.java).toList()
+
+
 }
 fun getFormattedTime(date: String): String {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dHH:mm:ssz")

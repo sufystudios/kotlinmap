@@ -6,6 +6,7 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.model.createListFromJsonString
+import com.google.android.gms.common.config.GservicesValue.init
 import com.google.android.libraries.maps.MapView
 import okhttp3.*
 import java.io.IOException
@@ -17,11 +18,19 @@ class MainViewModel : ViewModel() {
 
     //live data isn't used for this static map so I didn't implement an observer for change yet
     var feed = mutableStateListOf<MapItems>()
+    fun removeAllFeed() {
+        feed.clear()
+    }
+    fun addAllFeed(l :List<MapItems>) {
+        feed.addAll(l)
+    }
 
     init{
         fetchJson()
 
     }
+
+
 
     fun fetchJson() {
         val url =
@@ -33,8 +42,8 @@ class MainViewModel : ViewModel() {
                 val body = response.body?.string()
 
                 if (body != null) {
-                    feed.clear()
-                    feed = createListFromJsonString(body)
+                    removeAllFeed()
+                    addAllFeed(createListFromJsonString(body))
                     for(item in feed) {
                         Log.d("JSONITEM", item.name)
                     }
