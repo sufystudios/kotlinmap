@@ -14,7 +14,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.viewinterop.AndroidView
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.model.getFormattedTime
-import com.frederickbertram.composekotlinmap.model.getTrains
 import com.frederickbertram.composekotlinmap.viewmodel.MainViewModel
 import com.google.android.libraries.maps.CameraUpdateFactory
 import com.google.android.libraries.maps.MapView
@@ -55,6 +54,7 @@ fun ShowMapView(
         Row {
             Button(onClick = {
                 clearList()
+                addList(feed)
                 for(i in feed) {
                     if(i.typeId==1) {
                         i.marker.visible(false)

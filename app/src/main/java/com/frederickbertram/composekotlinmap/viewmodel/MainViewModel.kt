@@ -27,6 +27,7 @@ class MainViewModel : ViewModel() {
 
     }
     fun addAllFeed(l :List<MapItems>) {
+        feed.clear()
         feed.addAll(l)
     }
 
