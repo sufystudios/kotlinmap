@@ -17,11 +17,14 @@ class MainViewModel : ViewModel() {
     private lateinit var owner: ComponentActivity
 
     //live data isn't used for this static map so I didn't implement an observer for change yet
+    var feedStore = listOf<MapItems>()
     var feed = mutableStateListOf<MapItems>().also { fetchJson() }
 
 
     fun removeAllFeed() {
         feed.clear()
+        feed.addAll(feedStore)
+
     }
     fun addAllFeed(l :List<MapItems>) {
         feed.addAll(l)
@@ -39,7 +42,9 @@ class MainViewModel : ViewModel() {
 
                 if (body != null) {
                     removeAllFeed()
-                    addAllFeed(createListFromJsonString(body))
+                    feedStore = createListFromJsonString(body)
+                    addAllFeed(feedStore)
+
                     for(item in feed) {
                         Log.d("JSONITEM", item.name)
                     }

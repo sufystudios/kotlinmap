@@ -53,9 +53,18 @@ fun ShowMapView(
                 .fillMaxWidth(), textAlign = TextAlign.Center, text = "\nDepartures"
         )
         Row {
-            Button(onClick = { clearList()
-                addList(getTrains(feed)) }) {
+            Button(onClick = {
+                clearList()
+                for(i in feed) {
+                    if(i.typeId==1) {
+                        i.marker.visible(false)
+                    } else {
+                        i.marker.visible(true)
+                    }
 
+                }
+            }) {
+                Text(text = "Filter Trains")
             }            
         }
         AndroidView({ mapView }) { mapView ->
@@ -74,6 +83,7 @@ fun ShowMapView(
                     marker.title(item.name + " " + if(item.typeId==0)"(Train)" else "(Tram)" )
                     marker.snippet(getFormattedTime(item.departureTime))
                     marker.position(position)
+                    item.marker=marker
                     map.addMarker(marker)
                 }
             }
