@@ -1,10 +1,12 @@
 package com.frederickbertram.composekotlinmap.viewmodel
 
+import android.util.Log
 import androidx.activity.ComponentActivity
-import androidx.lifecycle.MutableLiveData
+import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.ViewModel
 import com.frederickbertram.composekotlinmap.model.MapItems
 import com.frederickbertram.composekotlinmap.model.createListFromJsonString
+import com.google.android.gms.common.config.GservicesValue.init
 import com.google.android.libraries.maps.MapView
 import okhttp3.*
 import java.io.IOException
@@ -15,13 +17,21 @@ class MainViewModel : ViewModel() {
     private lateinit var owner: ComponentActivity
 
     //live data isn't used for this static map so I didn't implement an observer for change yet
-    internal val feed: MutableLiveData<List<MapItems>> by lazy {
-        MutableLiveData<List<MapItems>>().also { fetchJson() }
+    var feedStore = listOf<MapItems>()
+    var feed = mutableStateListOf<MapItems>().also { fetchJson() }
+
+
+    fun removeAllFeed() {
+        feed.clear()
+        feed.addAll(feedStore)
+
+    }
+    fun addAllFeed(l :List<MapItems>) {
+        feed.clear()
+        feed.addAll(l)
+
     }
 
-    init{
-        feed.value= emptyList()
-    }
 
     fun fetchJson() {
         val url =
@@ -33,8 +43,14 @@ class MainViewModel : ViewModel() {
                 val body = response.body?.string()
 
                 if (body != null) {
-                    feed.postValue( createListFromJsonString(body))
-                    //Log.d("JSONDATA", body.toString())
+                    removeAllFeed()
+                    feedStore = createListFromJsonString(body)
+                    addAllFeed(feedStore)
+
+                    for(item in feed) {
+                        Log.d("JSONITEM", item.name)
+                    }
+                    Log.d("JSONDATA", body.toString())
                 }
             }
 

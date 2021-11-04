@@ -1,15 +1,21 @@
 package com.frederickbertram.composekotlinmap.model
 
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.snapshots.SnapshotStateList
+import com.google.android.libraries.maps.model.MarkerOptions
 import com.google.gson.GsonBuilder
 import java.time.LocalDateTime
 import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
 
 
-class MapItems (var typeId: Int, var departureTime: String, var route: String, var name: String, var latitude: Double, var longitude: Double, var isExpress: Boolean, var hasMyKiTopUp: Boolean) {}
+class MapItems (var typeId: Int, var marker : MarkerOptions, var departureTime: String, var route: String, var name: String, var latitude: Double, var longitude: Double, var isExpress: Boolean, var hasMyKiTopUp: Boolean) {}
 fun createListFromJsonString(json: String) : List<MapItems> {
     val gson = GsonBuilder().create()
+
     return gson.fromJson(json, Array<MapItems>::class.java).toList()
+
+
 }
 fun getFormattedTime(date: String): String {
     val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dHH:mm:ssz")
