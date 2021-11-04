@@ -7,6 +7,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
@@ -63,7 +64,8 @@ fun ShowMapView(
                 .fillMaxWidth(), textAlign = TextAlign.Center, text = "\nDepartures"
         )
 
-        Row(Modifier.height(Dp(40F))) {
+        Row(Modifier.height(Dp(40F))
+            .align(Alignment.CenterHorizontally)) {
 
 
             Button(onClick = {
