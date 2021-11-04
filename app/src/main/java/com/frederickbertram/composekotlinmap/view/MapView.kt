@@ -1,7 +1,6 @@
 package com.frederickbertram.composekotlinmap.view
 
 import android.os.Build
-import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -31,23 +30,14 @@ import androidx.compose.material.Text as Text1
 
 @Composable
 fun MapScreen(mapView: MapView, mainViewModel: MainViewModel) {
-
-
-    ShowMapView( mapView, mainViewModel.feed, mainViewModel::addAllFeed, mainViewModel::removeAllFeed)
-
-
-
+    ShowMapView(mapView, mainViewModel.feed)
 }
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun ShowMapView(
     mapView: MapView,
-    feed: List<MapItems>,
-    addList: (List<MapItems>) -> Unit,
-    removeList: () -> Unit
-
-
+    feed: List<MapItems>
 ) {
 
     Column(
@@ -64,37 +54,42 @@ fun ShowMapView(
                 .fillMaxWidth(), textAlign = TextAlign.Center, text = "\nDepartures"
         )
 
-        Row(Modifier.height(Dp(40F))
-            .align(Alignment.CenterHorizontally)) {
-
+        Row(
+            Modifier
+                .height(Dp(40F))
+                .align(Alignment.CenterHorizontally)
+        ) {
 
             Button(onClick = {
                 CoroutineScope(Dispatchers.Main).launch {
                     val map = mapView.awaitMap()
                     map.clear()
-                    for(i in getTrains(feed)) {
+                    for (i in getTrains(feed)) {
+
                         map.addMarker(i.marker)
                     }
                 }
             }) {
                 Text1("Filter Trains")
             }
+
             Button(onClick = {
                 CoroutineScope(Dispatchers.Main).launch {
                     val map = mapView.awaitMap()
                     map.clear()
-                    for(i in getTrams(feed)) {
+                    for (i in getTrams(feed)) {
                         map.addMarker(i.marker)
                     }
                 }
             }) {
                 Text1("Filter Trams")
             }
+            
             Button(onClick = {
                 CoroutineScope(Dispatchers.Main).launch {
                     val map = mapView.awaitMap()
                     map.clear()
-                    for(i in feed) {
+                    for (i in feed) {
                         map.addMarker(i.marker)
                     }
                 }
@@ -103,30 +98,29 @@ fun ShowMapView(
             }
         }
 
+        AndroidView({ mapView }) { mapView ->
+            CoroutineScope(Dispatchers.Main).launch {
+                val map = mapView.awaitMap()
+                var zoomLevel = 8
+                val zoom = CameraUpdateFactory.zoomTo(zoomLevel.toFloat())
+                map.moveCamera(zoom)
+                map.uiSettings.isZoomControlsEnabled = true
 
-            AndroidView({ mapView }) { mapView ->
-                CoroutineScope(Dispatchers.Main).launch {
-                    val map = mapView.awaitMap()
-                    var zoomLevel = 8
-                    val zoom = CameraUpdateFactory.zoomTo(zoomLevel.toFloat())
-                    map.moveCamera(zoom)
-                    map.uiSettings.isZoomControlsEnabled = true
-
-                    for (item in feed) {
-                        val marker = MarkerOptions()
-                        val position = LatLng(item.latitude, item.longitude)
-                        val cameraUpdate = CameraUpdateFactory.newLatLng(position)
-                        map.moveCamera(cameraUpdate)
-                        marker.title(item.name + " " + if (item.typeId == 0) "(Train)" else "(Tram)")
-                        marker.snippet(getFormattedTime(item.departureTime))
-                        marker.position(position)
-                        item.marker = marker
-                        map.addMarker(marker)
-                    }
+                for (item in feed) {
+                    val marker = MarkerOptions()
+                    val position = LatLng(item.latitude, item.longitude)
+                    val cameraUpdate = CameraUpdateFactory.newLatLng(position)
+                    map.moveCamera(cameraUpdate)
+                    marker.title(item.name + " " + if (item.typeId == 0) "(Train)" else "(Tram)")
+                    marker.snippet(getFormattedTime(item.departureTime))
+                    marker.position(position)
+                    item.marker = marker
+                    map.addMarker(marker)
                 }
             }
         }
     }
+}
 
 
 
